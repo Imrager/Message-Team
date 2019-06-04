@@ -5,10 +5,10 @@ from django.db import models
 class Post(models.Model):
     created_at = models.DateField()
     title = models.CharField(default = '', max_length = 100)
-    picture = models.ImageField(default = '', max_length = 100)
+    picture = models.CharField(default = '', max_length = 100)
     content = models.CharField(default = '', max_length = 100)
     site_url = models.URLField(default = '', max_length = 100)
-    vote_total = models.Integer(default = '', max_length = 100)
+    vote_total = models.IntegerField()
 
     def __str__(self):
         return self.title
@@ -24,7 +24,7 @@ class User(models.Model):
 class Comment(models.Model):
     created_at = models.DateField()
     content = models.CharField(max_length=1000)
-    vote _total = models.IntegerField(max_length=100)
+    vote_total = models.IntegerField()
     image_url = models.CharField(max_length=100)
     post = models.ForeignKey(
         'Post',
