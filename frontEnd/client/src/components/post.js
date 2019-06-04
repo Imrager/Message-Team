@@ -99,23 +99,23 @@ class Post extends Component {
                                     />
                                 </div>
                                 <div>
-                                    <label htmlFor="title">Title</label>
+                                    <label htmlFor="site_url">site_url</label>
                                     <input
-                                        id="title"
-                                        type="text"
-                                        name="title"
+                                        id="site_url"
+                                        type="url"
+                                        name="site_url"
                                         onChange={this.handleChange}
-                                        value={this.state.post.title}
+                                        value={this.state.post.site_url}
                                     />
                                 </div>
                                 <div>
-                                    <label htmlFor="title">Title</label>
+                                    <label htmlFor="vote_total">vote_total</label>
                                     <input
-                                        id="title"
-                                        type="text"
-                                        name="title"
+                                        id="vote_total"
+                                        type="number"
+                                        name="vote_total"
                                         onChange={this.handleChange}
-                                        value={this.state.post.title}
+                                        value={this.state.post.vote_total}
                                     />
                                 </div>
                                 <input type="submit" value="submit" />
