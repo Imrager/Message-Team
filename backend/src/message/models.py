@@ -21,7 +21,7 @@ class User(models.Model):
    def __str__(self):
        return self.email
 
-class Comments(models.Model):
+class Comment(models.Model):
     created_at = models.DateField()
     content = models.CharField(max_length=1000)
     vote _total = models.IntegerField(max_length=100)
