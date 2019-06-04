@@ -80,12 +80,42 @@ class Post extends Component {
                                     />
                                 </div>
                                 <div>
+                                    <label htmlFor="picture">Picture</label>
+                                    <input
+                                        id="picture"
+                                        type="url"
+                                        name="pictyre"
+                                        onChange={this.handleChange}
+                                        value={this.state.post.picture}
+                                    />
+                                </div>
+                                <div>
                                     <label htmlFor="content">Content</label>
                                     <textarea
                                         id="content"
                                         name="content"
                                         onChange={this.handleChange}
                                         value={this.state.post.content}
+                                    />
+                                </div>
+                                <div>
+                                    <label htmlFor="title">Title</label>
+                                    <input
+                                        id="title"
+                                        type="text"
+                                        name="title"
+                                        onChange={this.handleChange}
+                                        value={this.state.post.title}
+                                    />
+                                </div>
+                                <div>
+                                    <label htmlFor="title">Title</label>
+                                    <input
+                                        id="title"
+                                        type="text"
+                                        name="title"
+                                        onChange={this.handleChange}
+                                        value={this.state.post.title}
                                     />
                                 </div>
                                 <input type="submit" value="submit" />
